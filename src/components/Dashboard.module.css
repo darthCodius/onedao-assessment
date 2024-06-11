@@ -1,0 +1,40 @@
+.customRadius {
+  border-radius: 20px;
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.userName {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.userPhone {
+  color: grey;
+  font-size: 12px;
+}
+
+.userAvatar {
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.activeClass {
+  color: white;
+  background: orange;
+}
+
+.navLink {
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  color: var(--bs-nav-link-color);
+  text-decoration: none;
+  background: 0 0;
+  border: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}

@@ -1,0 +1,49 @@
+.inputBox:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: black;
+  outline: 0;
+  box-shadow: 0 0 0 0.03rem rgba(0, 0, 0);
+}
+
+.inputBox::placeholder {
+  color: #b1b0b0;
+  font-size: small;
+}
+
+.registerButton {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    text-decoration: underline;
+
+    color: var(--bs-btn-hover-bg);
+  }
+
+  &:active {
+    text-decoration: none !important;
+    color: var(--bs-btn-hover-bg) !important;
+  }
+}
+
+.customLabel {
+  font-size: small;
+  font-weight: 700;
+}
+
+.customRadius {
+  border-radius: 5%;
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.customImageBorder {
+  border-radius: 5% 0 0 5%;
+}
+
+.otpBox {
+  width: 40px;
+  display: inline-block;
+
+  height: 40px;
+}

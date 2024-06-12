@@ -1,6 +1,7 @@
 import { Col, Container, Nav, Navbar, Row } from "react-bootstrap";
 import styles from "./Dashboard.module.css";
 import { NavLink, Outlet } from "react-router-dom";
+import { BsGridFill } from "react-icons/bs";
 
 const Dashboard = () => {
   return (
@@ -19,39 +20,128 @@ const Dashboard = () => {
           </div>
           <Navbar bg="dark" data-bs-theme="dark">
             <Container>
-              <Nav className="me-auto flex-column text-white-50 gap-2">
-                <NavLink to="" className={`${styles.navLink}`} end>
-                  Dashboard
+              <Nav className="me-auto flex-column text-white-50 gap-3">
+                <NavLink
+                  to=""
+                  className={({ isActive }) =>
+                    isActive ? styles.activeNavLink : styles.navLink
+                  }
+                  end
+                >
+                  <span className="d-flex justify-content-center align-content-center gap-3">
+                    <BsGridFill className="align-self-center" />
+                    <span className={`${styles.menuItem}`}>Dashboard</span>
+                  </span>
                 </NavLink>
-                <NavLink to="orders" className={`${styles.navLink}`}>
-                  Orders
+                <NavLink
+                  to="orders"
+                  className={({ isActive }) =>
+                    isActive ? styles.activeNavLink : styles.navLink
+                  }
+                >
+                  <span className="d-flex justify-content-center align-content-center gap-3">
+                    <BsGridFill className="align-self-center" />
+                    <span>Dashboard</span>
+                  </span>
                 </NavLink>
-                <NavLink to="rides" className={`${styles.navLink}`}>
-                  Rides
+                <NavLink
+                  to="rides"
+                  className={({ isActive }) =>
+                    isActive ? styles.activeNavLink : styles.navLink
+                  }
+                >
+                  <span className="d-flex justify-content-center align-content-center gap-3">
+                    <BsGridFill className="align-self-center" />
+                    <span>Dashboard</span>
+                  </span>
                 </NavLink>
-                <NavLink to="clients" className={`${styles.navLink}`}>
-                  Clients
+                <NavLink
+                  to="clients"
+                  className={({ isActive }) =>
+                    isActive ? styles.activeNavLink : styles.navLink
+                  }
+                >
+                  <span className="d-flex justify-content-center align-content-center gap-3">
+                    <BsGridFill className="align-self-center" />
+                    <span>Dashboard</span>
+                  </span>
                 </NavLink>
-                <NavLink to="drivers" className={`${styles.navLink}`}>
-                  Drivers
+                <NavLink
+                  to="drivers"
+                  className={({ isActive }) =>
+                    isActive ? styles.activeNavLink : styles.navLink
+                  }
+                >
+                  <span className="d-flex justify-content-center align-content-center gap-3">
+                    <BsGridFill className="align-self-center" />
+                    <span>Dashboard</span>
+                  </span>
                 </NavLink>
-                <NavLink to="shift" className={`${styles.navLink}`}>
-                  Shift
+                <NavLink
+                  to="shift"
+                  className={({ isActive }) =>
+                    isActive ? styles.activeNavLink : styles.navLink
+                  }
+                >
+                  <span className="d-flex justify-content-center align-content-center gap-3">
+                    <BsGridFill className="align-self-center" />
+                    <span>Dashboard</span>
+                  </span>
                 </NavLink>
-                <NavLink to="livemap" className={`${styles.navLink}`}>
-                  Live Map
+                <NavLink
+                  to="livemap"
+                  className={({ isActive }) =>
+                    isActive ? styles.activeNavLink : styles.navLink
+                  }
+                >
+                  <span className="d-flex justify-content-center align-content-center gap-3">
+                    <BsGridFill className="align-self-center" />
+                    <span>Dashboard</span>
+                  </span>
                 </NavLink>
-                <NavLink to="carclasses" className={`${styles.navLink}`}>
-                  Car Classes
+                <NavLink
+                  to="carclasses"
+                  className={({ isActive }) =>
+                    isActive ? styles.activeNavLink : styles.navLink
+                  }
+                >
+                  <span className="d-flex justify-content-center align-content-center gap-3">
+                    <BsGridFill className="align-self-center" />
+                    <span>Dashboard</span>
+                  </span>
                 </NavLink>
-                <NavLink to="branches" className={`${styles.navLink}`}>
-                  Branches
+                <NavLink
+                  to="branches"
+                  className={({ isActive }) =>
+                    isActive ? styles.activeNavLink : styles.navLink
+                  }
+                >
+                  <span className="d-flex justify-content-center align-content-center gap-3">
+                    <BsGridFill className="align-self-center" />
+                    <span>Dashboard</span>
+                  </span>
                 </NavLink>
-                <NavLink to="moderators" className={`${styles.navLink}`}>
-                  Moderators
+                <NavLink
+                  to="moderators"
+                  className={({ isActive }) =>
+                    isActive ? styles.activeNavLink : styles.navLink
+                  }
+                >
+                  <span className="d-flex justify-content-center align-content-center gap-3">
+                    <BsGridFill className="align-self-center" />
+                    <span>Dashboard</span>
+                  </span>
                 </NavLink>
-                <NavLink to="settings" className={`${styles.navLink}`}>
-                  Settings
+                <NavLink
+                  to="settings"
+                  className={({ isActive }) =>
+                    isActive ? styles.activeNavLink : styles.navLink
+                  }
+                >
+                  <span className="d-flex justify-content-center align-content-center gap-3">
+                    <BsGridFill className="align-self-center" />
+                    <span>Dashboard</span>
+                  </span>
                 </NavLink>
               </Nav>
             </Container>
